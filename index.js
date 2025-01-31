@@ -31,6 +31,11 @@ catch(error)
   console.log("error",error)
 
 }
+
+app.get("/", (req, res) => {
+  res.send("Welcome to the API! Use /book or /user endpoints.");
+});
+
 //defining route
 
 app.use("/book",bookRoute)
